@@ -1,8 +1,8 @@
 {
   "expo": {
-    "name": "SwitchActu-Mobile",
-    "slug": "SwitchActu-Mobile",
-    "version": "1.0.0",
+    "name": "Switch-Actu",
+    "slug": "Switch-Actu",
+    "version": "0.0.1",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -24,10 +24,16 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
-      }
+      },
+      "userInterfaceStyle": "light"
     },
     "web": {
       "favicon": "./assets/favicon.png"
+    },
+    "extra": {
+      "eas": {
+        "projectId": "d1d6c8e7-dd54-4f35-a40c-86d12bedb2bd"
+      }
     }
   }
 }
