@@ -3,6 +3,7 @@ import React, { useEffect, useState } from 'react'
 import axios from 'axios'
 import { WP_REST_API_Posts } from 'wp-types';
 import { Card } from 'react-native-paper';
+import dayjs from 'dayjs';
 
 export default function Articles({navigation}: any) {
 
@@ -34,6 +35,7 @@ export default function Articles({navigation}: any) {
             <Card onPress={() => navigation.navigate("Article", article)}>
               <Card.Title
               title={article.title.rendered}
+              subtitle={dayjs(article.date).format('DD/MM/YYYY')}
               />
             </Card>
           </View>
