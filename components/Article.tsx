@@ -1,11 +1,16 @@
 import { View, Text, StyleSheet, ScrollView, ActivityIndicator } from 'react-native'
-import React from 'react'
+import React, { useEffect } from 'react'
 import WebView from 'react-native-webview';
 import { WP_REST_API_Post } from 'wp-types';
 
-export default function Article({route}: any) {
+export default function Article({route, navigation}: any) {
 
   const Article: WP_REST_API_Post = route.params;
+
+  useEffect(() => {
+    navigation.setOptions({ title: Article.title.rendered, });
+  }, [])
+  
 
   return (
     <WebView
