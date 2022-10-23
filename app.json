@@ -2,7 +2,7 @@
   "expo": {
     "name": "Switch-Actu",
     "slug": "Switch-Actu",
-    "version": "0.0.1",
+    "version": "0.0.2",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "userInterfaceStyle": "light",
@@ -25,7 +25,8 @@
         "foregroundImage": "./assets/adaptive-icon.png",
         "backgroundColor": "#FFFFFF"
       },
-      "userInterfaceStyle": "light"
+      "userInterfaceStyle": "light",
+      "package": "com.huhulacolle.SwitchActu"
     },
     "web": {
       "favicon": "./assets/favicon.png"
