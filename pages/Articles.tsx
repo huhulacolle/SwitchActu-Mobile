@@ -4,6 +4,7 @@ import axios from 'axios'
 import { WP_REST_API_Posts } from 'wp-types';
 import { Card } from 'react-native-paper';
 import dayjs from 'dayjs';
+import CardContent from 'react-native-paper/lib/typescript/components/Card/CardContent';
 
 export default function Articles({navigation}: any) {
 

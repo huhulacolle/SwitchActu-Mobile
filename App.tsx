@@ -1,9 +1,8 @@
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import { StatusBar } from 'expo-status-bar';
-import { SafeAreaProvider } from 'react-native-safe-area-context';
-import Article from './components/Article';
-import Home from './components/Home';
+import Article from './pages/Article';
+import Home from './navigations/Home';
 
 const Stack = createNativeStackNavigator();
 
